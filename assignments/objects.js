@@ -31,7 +31,6 @@ let kennan = {
   "email": "kdiben1@tinypic.com", 
   "name": "Kennan", 
   "gender": "M",
-  speak: console.log(`${this.name}`)
 };
 
 let keven = {
@@ -53,7 +52,6 @@ let antoinetta = {
   "email": "adaine5@samsung.com", 
   "name": "Antoinetta", 
   "gender": "F",
- // let multiplyNums = function(num1 * num2)
 };
 
 
@@ -83,9 +81,15 @@ console.log(antoinetta.gender);
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-console.log("Hello, my name is " + kennan.speak() + "!");
+kennan.speak = function(){
+  return "Hello, my name is Kennan!"
+};
+
+console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
+
+
 //console.log(antonietta.multiplyNums(3,4));
 
 
@@ -114,11 +118,14 @@ const parent = {
     }
   }
 }
+
 //child object
 const child = parent.child;
 
 //grandchild object
 const grandchild = parent.child.child;
+
+
 
 // Log the parent object's name
 

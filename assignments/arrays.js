@@ -72,7 +72,7 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 //We want to use inventory.length - 1 to find the last car.
 
 let lastCar = inventory[inventory.length -1];
-console.log(`${lastCar.car_make} ${lastCar.car_model}`)
+console.log(`${lastCar.car_make} ${lastCar.car_model}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
@@ -119,6 +119,6 @@ for (let i = 0; i < inventory.length; i++) {
     }
 }
 
-console.log(BMWAndAudi);
+//console.log(BMWAndAudi);
 
 //console.log(JSON.stringify({BMWAndAudi}));
